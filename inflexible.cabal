@@ -1,0 +1,54 @@
+name:               inflexible
+version:            0.3.0
+synopsis:           Semi-free differential graded-commutative algebras
+category:           Math, Algebra
+description:        A package to reason about semi-free differential
+                    graded-commutative algebras. Start reading with the
+                    "Alg" module and the 'Types.DgaSpec' type in the
+                    "Types" module.
+
+author:             Johannes Witzig
+license:            ISC
+license-file:       LICENSE
+build-type:         Simple
+cabal-version:      2.0
+
+data-files: pybits/Extern/sageglue.py
+
+library
+  hs-source-dirs:   src
+  
+  exposed-modules:    Alg
+                    , Alg.Classes
+                    , Alg.Cohomology
+                    , Alg.GenericMor
+                    , Types
+                    , Lens
+                    , Cache
+                    , Util
+                    , FracClear
+                    , HFMext
+                    , Extern.Maple
+                    , Extern.Sage
+  
+  build-depends:      base >= 4.7 && < 5
+                    , containers >= 0.5.7
+                    , data-ordlist >= 0.4.7
+                    , filepath ^>= 1.4
+                    , generics-sop
+                    , mtl >= 2.2
+                    , process >= 1.4.3
+                    , text
+                    --
+                    , optics-core < 1
+                    , optics-sop < 1
+                    , generic-data ^>= 0.9.0.0
+                    --
+                    , HaskellForMaths-excerpt == 0.4.8
+                    , settee-and-lunch >= 0.1
+                    , cpython == 3.5.1
+  
+  other-modules:   Paths_inflexible
+  autogen-modules: Paths_inflexible
+  
+  default-language: Haskell2010

@@ -1,0 +1,30 @@
+packages: .
+
+-- HaskellForMaths-excerpt
+source-repository-package
+    type: git
+    location: https://github.com/J0J0/HaskellForMaths-fork.git
+    tag: ad8a9f6e795a64222099de7194eae2ef273bfdb3
+         -- branch tensoralg-excerpt
+
+-- settee-and-lunch
+source-repository-package
+    type: git
+    location: https://github.com/J0J0/settee-and-lunch.git
+    tag: 449a9aeee2b46c9e6892a0120a66b9ee1b3291cc
+         -- tag v0.1.0
+
+-- optics-sop
+source-repository-package
+    type: git
+    location: https://github.com/well-typed/optics.git
+    tag: e7cc5d375645be19cccb2c9e4672b6a77c29ca78
+         -- tag v0.4.1
+    subdir: optics-sop
+
+-- haskell-cpython
+source-repository-package
+    type: git
+    location: https://github.com/J0J0/haskell-cpython
+    tag: ffed0d42300e1c401f7b55dabd9fe9ae8ddfe93b
+         -- branch inflexible

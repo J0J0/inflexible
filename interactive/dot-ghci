@@ -1,0 +1,14 @@
+:set -package inflexible
+
+-- extend search path to cover ./interactive
+:set -iinteractive
+
+-- show loaded modules instead of count only
+-- :set -fshow-loaded-modules
+
+-- enable language extensions
+:set -XOverloadedStrings
+:set -XTypeApplications
+
+-- the following is helpful in conjunction with :type +v
+:set -fprint-explicit-foralls
