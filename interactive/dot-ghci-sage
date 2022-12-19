@@ -1,7 +1,0 @@
--- make sure that we use our hack for python in ghci:
-import CPython.GhciHack (initializeInGhci)
-initializeInGhci
-
--- initialize sage
-import qualified Extern.Sage as Sage
-Sage.initialize

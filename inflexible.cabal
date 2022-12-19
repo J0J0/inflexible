@@ -13,8 +13,6 @@ license-file:       LICENSE
 build-type:         Simple
 cabal-version:      2.0
 
-data-files: pybits/Extern/sageglue.py
-
 library
   hs-source-dirs:   src
   
@@ -29,7 +27,6 @@ library
                     , FracClear
                     , HFMext
                     , Extern.Maple
-                    , Extern.Sage
   
   build-depends:      base >= 4.7 && < 5
                     , containers >= 0.5.7
@@ -46,7 +43,6 @@ library
                     --
                     , HaskellForMaths-excerpt == 0.4.8
                     , settee-and-lunch >= 0.1
-                    , cpython == 3.5.1
   
   other-modules:   Paths_inflexible
   autogen-modules: Paths_inflexible

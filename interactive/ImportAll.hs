@@ -50,8 +50,6 @@ import qualified Numeric.Matrix as LA
 import FracClear        as SELF
 import HFMext           as SELF
 import Extern.Maple     as SELF
-import qualified Extern.Sage
-import qualified Extern.Sage as Sage
 
 import Types            as SELF
 import Lens             as SELF

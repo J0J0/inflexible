@@ -21,10 +21,3 @@ source-repository-package
     tag: e7cc5d375645be19cccb2c9e4672b6a77c29ca78
          -- tag v0.4.1
     subdir: optics-sop
-
--- haskell-cpython
-source-repository-package
-    type: git
-    location: https://github.com/J0J0/haskell-cpython
-    tag: ffed0d42300e1c401f7b55dabd9fe9ae8ddfe93b
-         -- branch inflexible
