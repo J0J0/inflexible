@@ -334,7 +334,7 @@ extendScalars dga =
 -- 
 -- Returns 'Nothing' on the empty product,
 -- @('Left' x_1, ...)@ if \(x_1\) is of even degree, and
--- @('Right' x_1, ...)@ if \(x_2\) is of odd degree.
+-- @('Right' x_1, ...)@ if \(x_1\) is of odd degree.
 decompose :: FGCA a
           -> Maybe (Either a a, FGCA a)
 decompose ((Sym i (x:xs)), e) = Just (Left x,  (Sym (i-1) xs, e))
