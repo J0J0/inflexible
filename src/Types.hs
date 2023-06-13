@@ -61,7 +61,7 @@ type Lam k a = Vect k (FGCA a)
 -- types the /basis elements/ of the free module structure of such an algebra.
 type FGCA a  = Tensor (SymmetricAlgebra a) (ExteriorAlgebra a)
 
--- | The type constraint synonym @'PolyRing' k p m v@ says that we want thy type @p@
+-- | The type constraint synonym @'PolyRing' k p m v@ says that we want the type @p@
 -- to represent a polynomial ring over @k@ in variables coming from the
 -- type @v@, using the monomial constructor @m@
 -- (see "Math.CommutativeAlgebra.Polynomial" of the @HaskellForMaths@ package).
@@ -74,7 +74,7 @@ type PolyRing k p m v = ( Poly.MonomialConstructor m
 -- * Type synonyms for various types of maps
 --
 -- $TypeSynonymsForMaps
--- Of course, the following type synonyms do /not/ provide any type safty, e.g.
+-- Of course, the following type synonyms do /not/ provide any type safety, e.g.
 -- an 'AlgMor' is not guaranteed to preserve the algebra structure.
 -- However, it makes type signatures self-contained and clearly states
 -- the assumptions on the input.

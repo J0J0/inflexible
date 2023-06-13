@@ -1,5 +1,5 @@
 name:               inflexible
-version:            0.3.0
+version:            0.3.1
 synopsis:           Semi-free differential graded-commutative algebras
 category:           Math, Algebra
 description:        A package to reason about semi-free differential
